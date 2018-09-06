@@ -1,1 +1,1 @@
-# boilerplate-basic-js
+# boilerplate-basic-react

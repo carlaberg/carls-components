@@ -1,15 +1,17 @@
 {
-  "name": "boilerplate-basic-react",
+  "name": "carls-components",
   "version": "1.0.0",
-  "description": "Simple boilerplate for testing stuff",
+  "description": "React component library with storybook",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "webpack-dev-server --open --mode=development"
+    "dev": "webpack-dev-server --open --mode=development",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "author": "Carl Åberg",
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
+    "@storybook/addon-actions": "^3.4.11",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "styled-components": "^3.4.5"
@@ -19,6 +21,7 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/react": "^4.0.0-alpha.21",
     "babel-loader": "^8.0.2",
     "babel-plugin-styled-components": "^1.6.3",
     "css-loader": "^1.0.0",

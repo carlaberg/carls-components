@@ -1,8 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App';
-import './style/css-reset.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import Playground from "./components/Playground";
+import "./style/css-reset.css";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-
+ReactDOM.render(<Playground />, document.getElementById("root"));

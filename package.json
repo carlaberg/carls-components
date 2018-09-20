@@ -1,22 +1,26 @@
 {
   "name": "carls-components",
-  "version": "1.0.0",
-  "description": "React component library with storybook",
-  "main": "webpack.config.js",
+  "version": "0.0.7",
+  "description": "React component library",
+  "main": "dist/carls-components.js",
   "scripts": {
     "dev": "webpack-dev-server --open --mode=development",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build": "rm -rf dist && babel src/components --out-dir dist",
+    "prePublishOnly": "npm run build"
   },
   "author": "Carl Åberg",
   "license": "ISC",
   "dependencies": {
+    "react-spring": "^5.8.0",
+    "styled-components": "^3.4.5"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/polyfill": "^7.0.0",
     "@storybook/addon-actions": "^3.4.11",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "styled-components": "^3.4.5"
-  },
-  "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
@@ -26,8 +30,8 @@
     "babel-plugin-styled-components": "^1.6.3",
     "css-loader": "^1.0.0",
     "style-loader": "^0.23.0",
-    "webpack": "^4.17.2",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.7"
+    "webpack-dev-server": "^3.1.7",
+    "webpack": "^4.19.1"
   }
 }

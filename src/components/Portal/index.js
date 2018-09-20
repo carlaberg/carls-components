@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-const modalRoot = document.getElementById('modal');
+const modalRoot = typeof document === 'undefined' ? {} : document.getElementById('modal');
 
 class Portal extends Component {
   render() {

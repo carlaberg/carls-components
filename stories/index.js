@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import TestButton from '../src/components/TestButton';
+import { TestButton } from '../src/components/calles-components';
 
 storiesOf('TestButton', module)
   .add('with text', () => (
